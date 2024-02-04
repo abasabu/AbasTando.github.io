@@ -1,2 +1,2 @@
-# Abass De Data  Analyst Portfolio
+# Analyze with Abass
 This is a compilation of my data analysis projects
