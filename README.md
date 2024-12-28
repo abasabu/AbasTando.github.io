@@ -9,9 +9,6 @@
 
 The quality of healthcare services is a critical determinant of patient satisfaction and overall health outcomes. In the Outpatient Department (OPD) of healthcare facilities, long wait times, staff attitudes, and inefficiencies in service delivery often result in dissatisfaction among clients. However, without actionable insights derived from data, it becomes challenging to identify specific problem areas and implement targeted improvements. The findings from this analysis will help healthcare administrators prioritize areas of improvement and enhance the patient experience at the OPD.
 
-Since, number of neutral/dissatisfied customers (almost 57 %) are more than satisfied customers (around 43 %), thus in all they must work on improving their services. 
-
-Also since average delay in arrival & departure both is 15 minutes, thus they must try to reduce it.
 
 
 ### Steps followed 
@@ -29,7 +26,7 @@ Also since average delay in arrival & departure both is 15 minutes, thus they mu
 - Step 7 : Tool tip was added to navigate the satisfaction level, the tool tip shows a drilldown by number of dissatisfaction respondents who are will to return for service despite their dissatisfaction
 
   
-  (m) Availability of seating space
+   #Availability of seating space
   
 clients who indicated no seating available are unwilling to return for services.     
 ![Snap](https://github.com/user-attachments/assets/60963ce5-301c-487d-b1dd-d4483f10100d)
@@ -61,10 +58,8 @@ A doughnut was used to represent count of respondents by satisfaction and dissat
 ![Publish_Message](https://user-images.githubusercontent.com/102996550/174094520-3a845196-97e6-4d44-8760-34a64abc3e77.jpg)
 
 
- 
  # Report Snapshot (Power BI DESKTOP)
 
- 
 ![Dashboard](https://github.com/user-attachments/assets/7f41c427-2cae-4b2f-a334-2f84bef78372)
 
 # Insights
