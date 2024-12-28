@@ -19,11 +19,11 @@ The quality of healthcare services is a critical determinant of patient satisfac
 - Step 4 : It was observed that in none of the columns errors & empty values were present.
 - Step 5 :Age variable was dragged into the field & change from sum to average
 - 
-- Step 5 : Visual filters (Slicers) were added for four fields named "gender", and calender to switch between dates
+- Step 6 : Visual filters (Slicers) were added for four fields named "gender", and calender to switch between dates
 -
            
-- Step 6 : A bar chart was also added to the report design area representing the number of satisfied respondents by year (2021 &2024)). While creating this visual, field named "Insured status" was also added to the Legends bucket, thus number of respondendents   are also seggregated according the client insurence status. 
-- Step 7 : Tool tip was added to navigate the satisfaction level, the tool tip shows a drilldown by number of dissatisfaction respondents who are will to return for service despite their dissatisfaction
+- Step 7 : A bar chart was also added to the report design area representing the number of satisfied respondents by year (2021 &2024)). While creating this visual, field named "Insured status" was also added to the Legends bucket, thus number of respondendents   are also seggregated according the client insurence status. 
+- Step 8 : Tool tip was added to navigate the satisfaction level, the tool tip shows a drilldown by number of dissatisfaction respondents who are will to return for service despite their dissatisfaction
 
   
    #Availability of seating space
@@ -37,21 +37,18 @@ A doughnut was used to represent count of respondents by satisfaction and dissat
 
 ![Overal satisfaction](https://github.com/user-attachments/assets/0b9e5c5c-ff36-407d-86e9-6637ae809e60)
        
- - Step 8 : New measure was created to find  % of male and female respondents, 0 was add to ensure when one gender was selected the other wont display blank but 0 
+ - Step 9 : New measure was created to find  % of male and female respondents, 0 was add to ensure when one gender was selected the other wont display blank but 0 
  
  Following DAX expression was written to find % of customers,
  
          %male = CALCULATE(OPDSURVEY_NEW2024[Total Male]/OPDSURVEY_NEW2024[Satisfaction_All]*100)+0
  
  A card visual was used to represent this perecntage.
- 
+
  Snap of % of repondents Male & Female
- 
 ![Gender](https://github.com/user-attachments/assets/33125a65-c3e9-409c-b514-839adda5a97c)
 
-
- 
- - Step 9 : New measure was created to calculate total respondents satisfied or not
+ - Step 10 : New measure was created to calculate total respondents satisfied or not
  
  Following DAX expression was written to find total distance,
  Satisfaction_All = COUNTROWS(OPDSURVEY_NEW2024)         
@@ -59,7 +56,6 @@ A doughnut was used to represent count of respondents by satisfaction and dissat
 
 
  # Report Snapshot (Power BI DESKTOP)
-
 ![Dashboard](https://github.com/user-attachments/assets/7f41c427-2cae-4b2f-a334-2f84bef78372)
 
 # Insights
