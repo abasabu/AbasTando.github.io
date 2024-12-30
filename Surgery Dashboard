@@ -1,0 +1,118 @@
+#Surgery Dashboard
+
+This dashboard will enhance operating theatre utilization and empower surgeons with actionable insights. This solution will provide real-time data on revenue generation, procedural trends, and individual performance metrics, enabling data-driven decision-making to optimize operations and improve overall efficiency.
+#Summary 
+Total of 710 surgeries were performed generating a total revenue of over GHC300,000 over the 12months period
+
+#Steps followed
+- Step 1 : Load data into Power BI Desktop, dataset is a csv file.
+
+- Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
+- Step 3 : The data type for Age column was changed to whole number from text .
+- Step 4 : We created new measures
+ using the following DAX 
+
+Total surgeries performed = COUNTROWS(Surgery2024)
+%Percent of surgeries = Surgery2024[Total surgeries performed]/710*100
+
+Number of surgery by OT = CALCULATE(SUM(Surgery2024[Cost of Surgery]), ALLEXCEPT(Surgery2024,Surgery2024[OT Name]))
+
+Procedure cost = CALCULATE(SUM(Surgery2024[Cost of Surgery]), ALLEXCEPT(Surgery2024,Surgery2024[Procedure Performed]))
+
+Revenue by OT = CALCULATE(SUM(Surgery2024[Cost of Surgery]), ALLEXCEPT(Surgery2024,Surgery2024[OT Name]))
+
+Procedure revenue by Surgeon in each month= CALCULATE(SUM(Surgery2024[Cost of Surgery]), ALLEXCEPT(Surgery2024,Surgery2024[Month Name],Surgery2024[Surgeon],Surgery2024[Procedure Performed]))
+
+TOTAL REVENUNE BY SURGEON = CALCULATE(SUM(Surgery2024[Cost of Surgery]), ALLEXCEPT(Surgery2024, Surgery2024[Surgeon]))
+
+
+5. Key Metrics: Total Surgeries Performed and Total Surgery Revenue
+![Totals](https://github.com/user-attachments/assets/47ad0b51-58f1-47e7-98ca-65504769bb42)
+
+Visual Type: Card
+Steps to Create:
+Drag a Card visual onto the canvas.
+Add the total count of surgeries field for the first card.
+Repeat for the second card, using the sum of the surgery revenue field.
+Format the visuals for alignment and appearance.
+Purpose: Displays key performance indicators (KPIs) prominently.
+6. Filter by Surgeon
+![FilterbySurgeon](https://github.com/user-attachments/assets/bd501a41-cc5b-491c-86ae-d2506ceb4168)
+Visual Type: Slicer
+Steps to Create:
+Drag a Slicer visual onto the canvas.
+Add the field containing surgeon names to the slicer.
+Enable the selection of multiple or single names in the slicer settings.
+Purpose: Enables filtering of data by individual surgeons.
+7. Surgeries by Month
+Visual Type: Ribbon Chart
+
+![Surgeries_bymonth](https://github.com/user-attachments/assets/d82cc9f8-fa80-4693-92cc-aa6500f67a37)
+Steps to Create:
+Add a Clustered Bar Chart to the canvas.
+Drag the month field to the x-axis.
+Drag the count of surgeries field to the y-axis.
+Format the chart to include gridlines and labels.
+Purpose: Shows the distribution of surgeries over time.
+8. Total Surgeries Performed in Each OT by Month
+Visual Type: Line Chart
+![Screenshot 2024-12-30 200128](https://github.com/user-attachments/assets/8b4b77cd-66e2-45d8-a62a-731f52ad290c)
+Steps to Create:
+Insert a Line Chart onto the canvas.
+Add the month field to the x-axis.
+Add the count of surgeries to the y-axis.
+Use the operating theater field in the legend for comparison.
+Format with colors to differentiate between theaters.
+Purpose: Displays trends in surgical activity across different theaters.
+9. Total Surgeries by Surgeon
+Visual Type: Multi-row card
+![Screenshot 2024-12-30 200326](https://github.com/user-attachments/assets/4d81761b-2347-4873-80f3-47c095d78319)
+Steps to Create:
+Drag a Table visual onto the canvas.
+Add fields for surgeon names, total surgeries performed, percentage of surgeries, and surgery revenue.
+Format columns for alignment and sorting.
+Purpose: Provides detailed performance data for each surgeon.
+10. Revenue by Type of Surgery
+Visual Type: Clustered Bar Chart
+Steps to Create:
+Insert a Clustered Bar Chart.
+Drag the procedure type field to the x-axis.
+Add the total revenue field to the y-axis.
+Customize colors and axis labels.
+Purpose: Highlights the revenue contribution of each type of surgery.
+11. Revenue by OT
+Visual Type: Donut Chart
+Steps to Create:
+Add a Donut Chart to the canvas.
+Use the theater type field in the legend.
+Add the sum of revenue field to the values.
+Adjust chart size and format for clarity.
+Purpose: Visualizes the revenue distribution between operating theaters.
+12. Date Range Filter
+Visual Type: Date Slicer
+Steps to Create:
+Add a Slicer to the canvas.
+Drag the date field into the slicer.
+Configure the slicer settings to show a date range slider.
+Purpose: Allows users to filter data by a specific time period.
+
+
+#PowerBi dashborad
+![Dashboard](https://github.com/user-attachments/assets/44a4a910-3f57-443d-818d-4e1ecadc385a)
+#Insights 
+Theater Utilization:
+
+The General Operation Theatre is more consistently utilized compared to Theatre 2, which shows a spike in June but lower usage overall.
+This suggests potential underutilization of Theatre 2 or differences in case distribution.
+Surgery Revenue:
+
+Caesarean Sections are the most significant contributor to revenue ($162K), making them a critical focus for resource allocation.
+Other procedures like External Hernia Repair, Myomectomy, and Laparotomy generate significantly less revenue.
+Surgeon Performance:
+
+Dr. Frank Adu-Poku leads in surgeries performed (223) and revenue generated, accounting for 31.41% of all surgeries.
+Surgeries peak in May and June, with notable dips in February and August. This could indicate scheduling patterns, seasonal demands, or resource availability.
+
+Revenue Distribution by Theater:
+The General Operation Theatre generates 68.32% of total revenue, significantly outperforming Theatre 2.
+This dashboard provides a clear view of operational performance, helping stakeholders make informed decisions to optimize resources, enhance surgeon performance, and improve financial outcomes.
