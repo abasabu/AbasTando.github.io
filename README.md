@@ -186,23 +186,23 @@ Configure the slicer settings to show a date range slider.
 Purpose: Allows users to filter data by a specific time period.
 
 
-#PowerBi dashborad
+#PowerBi dashboaed
 ![Dashboard](https://github.com/user-attachments/assets/44a4a910-3f57-443d-818d-4e1ecadc385a)
 #Insights 
-Theater Utilization:
+-Theater Utilization:
 
 The General Operation Theatre is more consistently utilized compared to Theatre 2, which shows a spike in June but lower usage overall.
 This suggests potential underutilization of Theatre 2 or differences in case distribution.
-Surgery Revenue:
+-Surgery Revenue:
 
 Caesarean Sections are the most significant contributor to revenue ($162K), making them a critical focus for resource allocation.
 Other procedures like External Hernia Repair, Myomectomy, and Laparotomy generate significantly less revenue.
-Surgeon Performance:
+-Surgeon Performance:
 
 Dr. Frank Adu-Poku leads in surgeries performed (223) and revenue generated, accounting for 31.41% of all surgeries.
 Surgeries peak in May and June, with notable dips in February and August. This could indicate scheduling patterns, seasonal demands, or resource availability.
 
-Revenue Distribution by Theater:
+-Revenue Distribution by Theater:
 The General Operation Theatre generates 68.32% of total revenue, significantly outperforming Theatre 2.
 This dashboard provides a clear view of operational performance, helping stakeholders make informed decisions to optimize resources, enhance surgeon performance, and improve financial outcomes.
         
