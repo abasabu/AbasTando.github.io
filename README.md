@@ -136,16 +136,16 @@ Purpose: Enables filtering of data by individual surgeons.
 7. Surgeries by Month
 Visual Type: Ribbon Chart
 
-![Surgeries_bymonth](https://github.com/user-attachments/assets/d82cc9f8-fa80-4693-92cc-aa6500f67a37)
 Steps to Create:
 Add a Clustered Bar Chart to the canvas.
 Drag the month field to the x-axis.
 Drag the count of surgeries field to the y-axis.
 Format the chart to include gridlines and labels.
 Purpose: Shows the distribution of surgeries over time.
+![Surgeries_bymonth](https://github.com/user-attachments/assets/d82cc9f8-fa80-4693-92cc-aa6500f67a37)
+
 8. Total Surgeries Performed in Each OT by Month
 Visual Type: Line Chart
-![Screenshot 2024-12-30 200128](https://github.com/user-attachments/assets/8b4b77cd-66e2-45d8-a62a-731f52ad290c)
 Steps to Create:
 Insert a Line Chart onto the canvas.
 Add the month field to the x-axis.
@@ -153,15 +153,18 @@ Add the count of surgeries to the y-axis.
 Use the operating theater field in the legend for comparison.
 Format with colors to differentiate between theaters.
 Purpose: Displays trends in surgical activity across different theaters.
-9. Total Surgeries by Surgeon
+![Screenshot 2024-12-30 200128](https://github.com/user-attachments/assets/8b4b77cd-66e2-45d8-a62a-731f52ad290c)
+
+10. Total Surgeries by Surgeon
 Visual Type: Multi-row card
-![Screenshot 2024-12-30 200326](https://github.com/user-attachments/assets/4d81761b-2347-4873-80f3-47c095d78319)
-Steps to Create:
 Drag a Table visual onto the canvas.
 Add fields for surgeon names, total surgeries performed, percentage of surgeries, and surgery revenue.
 Format columns for alignment and sorting.
 Purpose: Provides detailed performance data for each surgeon.
-10. Revenue by Type of Surgery
+![Screenshot 2024-12-30 200326](https://github.com/user-attachments/assets/4d81761b-2347-4873-80f3-47c095d78319)
+Steps to Create:
+
+12. Revenue by Type of Surgery
 Visual Type: Clustered Bar Chart
 Steps to Create:
 Insert a Clustered Bar Chart.
@@ -169,7 +172,7 @@ Drag the procedure type field to the x-axis.
 Add the total revenue field to the y-axis.
 Customize colors and axis labels.
 Purpose: Highlights the revenue contribution of each type of surgery.
-11. Revenue by OT
+13. Revenue by OT
 Visual Type: Donut Chart
 Steps to Create:
 Add a Donut Chart to the canvas.
@@ -177,7 +180,7 @@ Use the theater type field in the legend.
 Add the sum of revenue field to the values.
 Adjust chart size and format for clarity.
 Purpose: Visualizes the revenue distribution between operating theaters.
-12. Date Range Filter
+14. Date Range Filter
 Visual Type: Date Slicer
 Steps to Create:
 Add a Slicer to the canvas.
@@ -186,11 +189,11 @@ Configure the slicer settings to show a date range slider.
 Purpose: Allows users to filter data by a specific time period.
 
 
-#PowerBi dashboaed
+#PowerBi dashboard
 ![Dashboard](https://github.com/user-attachments/assets/44a4a910-3f57-443d-818d-4e1ecadc385a)
+
 #Insights 
 -Theater Utilization:
-
 The General Operation Theatre is more consistently utilized compared to Theatre 2, which shows a spike in June but lower usage overall.
 This suggests potential underutilization of Theatre 2 or differences in case distribution.
 -Surgery Revenue:
