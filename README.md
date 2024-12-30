@@ -42,7 +42,7 @@ A doughnut was used to represent count of respondents by satisfaction and dissat
  Satisfaction_All = COUNTROWS(OPDSURVEY_NEW2024)         
 
  # Report Snapshot (Power BI DESKTOP)
-![Dashboard](https://github.com/user-attachments/assets/7f41c427-2cae-4b2f-a334-2f84bef78372)
+![Dashboard](https://github.com/user-attachments/assets/3b7c32e2-2309-4eec-9511-a7e10f0e86ef)
 
 # Insights
 
