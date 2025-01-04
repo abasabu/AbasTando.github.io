@@ -1,4 +1,5 @@
-#OPD Pharmacy Dashboard
+##OPD Pharmacy Dashboard
+
 The OPD Pharmacy Dashboard provides a comprehensive analysis of patient attendance, demographic distribution, and prescription fulfillment trends for 2024. This report highlights key insights, identifies highs and lows, and discusses their implications for quality care.
 
 ![Attendance and gender Distribution](https://github.com/user-attachments/assets/fb7c802b-7a5d-4ef6-8270-9cd32191d8b7)
