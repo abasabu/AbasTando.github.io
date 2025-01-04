@@ -1,4 +1,4 @@
-
+#OPD Pharmacy Dashboard
 The OPD Pharmacy Dashboard provides a comprehensive analysis of patient attendance, demographic distribution, and prescription fulfillment trends for 2024. This report highlights key insights, identifies highs and lows, and discusses their implications for quality care.
 
 ![Attendance and gender Distribution](https://github.com/user-attachments/assets/fb7c802b-7a5d-4ef6-8270-9cd32191d8b7)
@@ -26,6 +26,11 @@ To enhance quality care, optimizing stock management is essential to address gap
 ![Pharmacy Dashboard](https://github.com/user-attachments/assets/8bece1e8-b7e6-413a-9b08-65268aa1a7cf)
 
 The OPD Pharmacy Dashboard reveals valuable insights into patient demographics, prescription trends, and service delivery performance. By addressing identified gaps and optimizing resource allocation, the facility can significantly enhance the quality of care, ensuring better health outcomes and improved patient satisfaction.
+
+
+
+
+
 
 
 
