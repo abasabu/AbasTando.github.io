@@ -1,87 +1,33 @@
 
-# OPD Satisfaction-Dashboard
+The OPD Pharmacy Dashboard provides a comprehensive analysis of patient attendance, demographic distribution, and prescription fulfillment trends for 2024. This report highlights key insights, identifies highs and lows, and discusses their implications for quality care.
 
-## Problem Statement
+![Attendance and gender Distribution](https://github.com/user-attachments/assets/fb7c802b-7a5d-4ef6-8270-9cd32191d8b7)
 
-The quality of healthcare services is a critical determinant of patient satisfaction and overall health outcomes. In the Outpatient Department (OPD) of healthcare facilities, long wait times, staff attitudes, and inefficiencies in service delivery often result in dissatisfaction among clients. However, without actionable insights derived from data, it becomes challenging to identify specific problem areas and implement targeted improvements. The findings from this analysis will help healthcare administrators prioritize areas of improvement and enhance the patient experience at the OPD.
+The total patient attendance recorded was 63,000. This indicates a high level of patient engagement with the facility, reflecting accessibility and trust in the health service. While positive, high attendance could strain resources such as staff, medications, and time. Proper resource allocation is essential to maintain service quality. 
+The average age of patients was 34.9 years, with a maximum age of 109 years. The diverse age demographic underscores the need for tailored services and medications to cater to different life stages.
 
-### Steps followed 
-- Step 1 : Load data into Power BI Desktop, dataset is a csv file.
-- Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
-- Step 3 : It was observed that in none of the columns errors & empty values were present.
-- Step 4 :Age variable was dragged into the field & change from sum to average
-- Step 5 : Visual filters (Slicers) were added for four fields named "gender", and calender to switch between dates
-           
-- Step 6 : A bar chart was added to the report design area to visualize the number of satisfied respondents by year (2021 and 2024). The "Insured Status" field was included in the Legends bucket, segmenting the respondents based on their insurance status.
+A significant gender disparity is evident, with 57,000 females compared to 25,000 males. The higher number of female patients suggests a greater utilization of services, potentially linked to reproductive health or chronic conditions. This requires gender-sensitive care and resource planning to address specific female health needs.
 
-- Step 7: A tooltip was added to enhance interactivity by providing a drilldown view of dissatisfaction levels. The tooltip displays the number of dissatisfied respondents who are still willing to return for services despite their dissatisfaction.
+Young adults, numbering 25,000, form the largest patient demographic, followed by adults at 22,000, with smaller contributions from seniors, children, and teenagers at 14,000, 13,000, and 7,000 respectively. The predominance of young adults and adults highlights the need to focus on chronic disease management, preventive health education, and maternal care. Pediatric and geriatric health should remain a priority for comprehensive service delivery.
+
+A total of 123,000 prescriptions were issued, while 102,000 medicines were dispensed, resulting in a fulfillment rate of 82.8%. A gap of 17.2% indicates that not all prescribed medicines were dispensed. This gap could be due to supply chain issues, affordability challenges, or operational inefficiencies. Unfulfilled prescriptions can undermine treatment adherence and patient outcomes.
+
+![Prescription](https://github.com/user-attachments/assets/46f97034-ea91-418c-b015-bc6cfcfb039a)
+
+July 2024 recorded the highest monthly fulfillment, with 11,700 medicines dispensed, while March 2024 saw the lowest at 7,400 medicines dispensed. Seasonal variations or supply chain challenges may be responsible for the observed trends. Addressing these issues can ensure consistent availability of medicines.
+
+Significant fluctuations in daily medicine dispensing were observed, with the highest at 730 and the lowest at 118. These inconsistencies may affect patient trust and adherence to treatment. Stabilizing daily operations is crucial for maintaining quality care.
+
+![Screenshot 2025-01-04 165537](https://github.com/user-attachments/assets/20157e16-da6b-4cf1-a64d-623d282c7c20)
 
 
-   #Availability of seating space
-  
-clients who indicated no seating available are unwilling to return for services.     
-![Snap](https://github.com/user-attachments/assets/60963ce5-301c-487d-b1dd-d4483f10100d)
-            
-A doughnut was used to represent count of respondents by satisfaction and dissatisfaction levels. as well as overall satisfaction perecntage
-![Overal satisfaction](https://github.com/user-attachments/assets/0b9e5c5c-ff36-407d-86e9-6637ae809e60)
-       
- - Step 8 : New measure was created to find  % of male and female respondents, 0 was add to ensure when one gender was selected the other wont display blank but 0 
- 
- Following DAX expression was written to find % of customers,
- 
-         %male = CALCULATE(OPDSURVEY_NEW2024[Total Male]/OPDSURVEY_NEW2024[Satisfaction_All]*100)+0
- 
- A card visual was used to represent this perecntage.
+To enhance quality care, optimizing stock management is essential to address gaps in prescription fulfillment by improving inventory control and ensuring timely restocking of essential medicines. Seasonal trends should be analyzed to address the causes behind monthly fluctuations in medicine dispensing and mitigate future dips. Services catering to the high number of female patients, including reproductive health and chronic disease management, should be strengthened. Resources must be allocated adequately for children and seniors, addressing their specific health needs. Strategies should be implemented to reduce daily dispensing inconsistencies and ensure reliable service delivery. Prescription fulfillment rates must be continuously tracked, aiming for a target closer to 100% to enhance patient satisfaction and health outcomes.
 
- Snap of % of repondents Male & Female
-![Gender](https://github.com/user-attachments/assets/33125a65-c3e9-409c-b514-839adda5a97c)
+![Pharmacy Dashboard](https://github.com/user-attachments/assets/8bece1e8-b7e6-413a-9b08-65268aa1a7cf)
 
- - Step 9 : New measure was created to calculate total respondents satisfied or not
- 
- Following DAX expression was written to find total distance,
- Satisfaction_All = COUNTROWS(OPDSURVEY_NEW2024)         
+The OPD Pharmacy Dashboard reveals valuable insights into patient demographics, prescription trends, and service delivery performance. By addressing identified gaps and optimizing resource allocation, the facility can significantly enhance the quality of care, ensuring better health outcomes and improved patient satisfaction.
 
- # Report Snapshot (Power BI DESKTOP)
-![Dashboard](https://github.com/user-attachments/assets/3b7c32e2-2309-4eec-9511-a7e10f0e86ef)
 
-# Insights
-
-A single page report was created on Power BI Desktop
-
-Following inferences can be drawn from the dashboard;
-
-### [1] Total Number of respondents = 800 but there is one Null value for some of the variables
-
- #Demographics of Respondents:
- The average age of respondents is 41.1 years.
- There is a higher proportion of female respondents (63.8%)   compared to males (36.2%).
- 
- #Overall Satisfaction:
- 81.2% of respondents reported being satisfied with the OPD  services.
- A smaller proportion (18.8%) expressed dissatisfaction.
-
- #Cleanliness of the OPD:
- Among old clients, the majority rated cleanliness as "Very Good" (321 respondents) or "Good" (273 respondents), with minimal  complaints.
-  New clients also expressed high satisfaction with cleanliness, but their numbers are smaller.
-
- #Proportion of Dissatisfaction Points:
- The highest dissatisfaction was associated with the Records section (38.1%).
- The Pharmacy and History Table/Revenue sections were tied for the next highest dissatisfaction levels (19.05% each).
- Consulting Room and ANC had the least dissatisfaction (4.76% each).
-
-#Availability of Seating:
- A significant majority (87.61%) of respondents reported seating availability, while 12.39% experienced a lack of seating.
-
-#Satisfaction Trends Over Time:
- Overall satisfaction improved slightly from 80.3% in 2021 to 81.8% in 2024, showing a positive trend.
- Dissatisfaction dropped marginally from 19.7% in 2021 to 18.2% in 2024.
-
-#Insurance Coverage:
- A vast majority of respondents were insured (92.62%), while a small portion (7.38%) were uninsured.
-
-#Satisfaction with Time Spent:
-Over half of the respondents (55.82%) were "Very Satisfied" with the time spent at the OPD.
-Another 36.55% reported being "Satisfied," leaving only a minority dissatisfied (7.01% Dissatisfied and 0.63% Very Dissatisfied).
 
 
 #Surgery Dashboard
@@ -213,36 +159,89 @@ This dashboard provides a clear view of operational performance, helping stakeho
 
 
 
-#Pharmacy Dashboard
+# OPD Satisfaction-Dashboard
 
-The OPD Pharmacy Dashboard provides a comprehensive analysis of patient attendance, demographic distribution, and prescription fulfillment trends for 2024. This report highlights key insights, identifies highs and lows, and discusses their implications for quality care.
+## Problem Statement
 
-![Attendance and gender Distribution](https://github.com/user-attachments/assets/fb7c802b-7a5d-4ef6-8270-9cd32191d8b7)
+The quality of healthcare services is a critical determinant of patient satisfaction and overall health outcomes. In the Outpatient Department (OPD) of healthcare facilities, long wait times, staff attitudes, and inefficiencies in service delivery often result in dissatisfaction among clients. However, without actionable insights derived from data, it becomes challenging to identify specific problem areas and implement targeted improvements. The findings from this analysis will help healthcare administrators prioritize areas of improvement and enhance the patient experience at the OPD.
 
-The total patient attendance recorded was 63,000. This indicates a high level of patient engagement with the facility, reflecting accessibility and trust in the health service. While positive, high attendance could strain resources such as staff, medications, and time. Proper resource allocation is essential to maintain service quality. 
-The average age of patients was 34.9 years, with a maximum age of 109 years. The diverse age demographic underscores the need for tailored services and medications to cater to different life stages.
+### Steps followed 
+- Step 1 : Load data into Power BI Desktop, dataset is a csv file.
+- Step 2 : Open power query editor & in view tab under Data preview section, check "column distribution", "column quality" & "column profile" options.
+- Step 3 : It was observed that in none of the columns errors & empty values were present.
+- Step 4 :Age variable was dragged into the field & change from sum to average
+- Step 5 : Visual filters (Slicers) were added for four fields named "gender", and calender to switch between dates
+           
+- Step 6 : A bar chart was added to the report design area to visualize the number of satisfied respondents by year (2021 and 2024). The "Insured Status" field was included in the Legends bucket, segmenting the respondents based on their insurance status.
 
-A significant gender disparity is evident, with 57,000 females compared to 25,000 males. The higher number of female patients suggests a greater utilization of services, potentially linked to reproductive health or chronic conditions. This requires gender-sensitive care and resource planning to address specific female health needs.
-
-Young adults, numbering 25,000, form the largest patient demographic, followed by adults at 22,000, with smaller contributions from seniors, children, and teenagers at 14,000, 13,000, and 7,000 respectively. The predominance of young adults and adults highlights the need to focus on chronic disease management, preventive health education, and maternal care. Pediatric and geriatric health should remain a priority for comprehensive service delivery.
-
-A total of 123,000 prescriptions were issued, while 102,000 medicines were dispensed, resulting in a fulfillment rate of 82.8%. A gap of 17.2% indicates that not all prescribed medicines were dispensed. This gap could be due to supply chain issues, affordability challenges, or operational inefficiencies. Unfulfilled prescriptions can undermine treatment adherence and patient outcomes.
-
-![Prescription](https://github.com/user-attachments/assets/46f97034-ea91-418c-b015-bc6cfcfb039a)
-
-July 2024 recorded the highest monthly fulfillment, with 11,700 medicines dispensed, while March 2024 saw the lowest at 7,400 medicines dispensed. Seasonal variations or supply chain challenges may be responsible for the observed trends. Addressing these issues can ensure consistent availability of medicines.
-
-Significant fluctuations in daily medicine dispensing were observed, with the highest at 730 and the lowest at 118. These inconsistencies may affect patient trust and adherence to treatment. Stabilizing daily operations is crucial for maintaining quality care.
-
-![Screenshot 2025-01-04 165537](https://github.com/user-attachments/assets/20157e16-da6b-4cf1-a64d-623d282c7c20)
+- Step 7: A tooltip was added to enhance interactivity by providing a drilldown view of dissatisfaction levels. The tooltip displays the number of dissatisfied respondents who are still willing to return for services despite their dissatisfaction.
 
 
-To enhance quality care, optimizing stock management is essential to address gaps in prescription fulfillment by improving inventory control and ensuring timely restocking of essential medicines. Seasonal trends should be analyzed to address the causes behind monthly fluctuations in medicine dispensing and mitigate future dips. Services catering to the high number of female patients, including reproductive health and chronic disease management, should be strengthened. Resources must be allocated adequately for children and seniors, addressing their specific health needs. Strategies should be implemented to reduce daily dispensing inconsistencies and ensure reliable service delivery. Prescription fulfillment rates must be continuously tracked, aiming for a target closer to 100% to enhance patient satisfaction and health outcomes.
+   #Availability of seating space
+  
+clients who indicated no seating available are unwilling to return for services.     
+![Snap](https://github.com/user-attachments/assets/60963ce5-301c-487d-b1dd-d4483f10100d)
+            
+A doughnut was used to represent count of respondents by satisfaction and dissatisfaction levels. as well as overall satisfaction perecntage
+![Overal satisfaction](https://github.com/user-attachments/assets/0b9e5c5c-ff36-407d-86e9-6637ae809e60)
+       
+ - Step 8 : New measure was created to find  % of male and female respondents, 0 was add to ensure when one gender was selected the other wont display blank but 0 
+ 
+ Following DAX expression was written to find % of customers,
+ 
+         %male = CALCULATE(OPDSURVEY_NEW2024[Total Male]/OPDSURVEY_NEW2024[Satisfaction_All]*100)+0
+ 
+ A card visual was used to represent this perecntage.
 
-![Pharmacy Dashboard](https://github.com/user-attachments/assets/8bece1e8-b7e6-413a-9b08-65268aa1a7cf)
+ Snap of % of repondents Male & Female
+![Gender](https://github.com/user-attachments/assets/33125a65-c3e9-409c-b514-839adda5a97c)
 
-The OPD Pharmacy Dashboard reveals valuable insights into patient demographics, prescription trends, and service delivery performance. By addressing identified gaps and optimizing resource allocation, the facility can significantly enhance the quality of care, ensuring better health outcomes and improved patient satisfaction.
+ - Step 9 : New measure was created to calculate total respondents satisfied or not
+ 
+ Following DAX expression was written to find total distance,
+ Satisfaction_All = COUNTROWS(OPDSURVEY_NEW2024)         
 
+ # Report Snapshot (Power BI DESKTOP)
+![Dashboard](https://github.com/user-attachments/assets/3b7c32e2-2309-4eec-9511-a7e10f0e86ef)
+
+# Insights
+
+A single page report was created on Power BI Desktop
+
+Following inferences can be drawn from the dashboard;
+
+### [1] Total Number of respondents = 800 but there is one Null value for some of the variables
+
+ #Demographics of Respondents:
+ The average age of respondents is 41.1 years.
+ There is a higher proportion of female respondents (63.8%)   compared to males (36.2%).
+ 
+ #Overall Satisfaction:
+ 81.2% of respondents reported being satisfied with the OPD  services.
+ A smaller proportion (18.8%) expressed dissatisfaction.
+
+ #Cleanliness of the OPD:
+ Among old clients, the majority rated cleanliness as "Very Good" (321 respondents) or "Good" (273 respondents), with minimal  complaints.
+  New clients also expressed high satisfaction with cleanliness, but their numbers are smaller.
+
+ #Proportion of Dissatisfaction Points:
+ The highest dissatisfaction was associated with the Records section (38.1%).
+ The Pharmacy and History Table/Revenue sections were tied for the next highest dissatisfaction levels (19.05% each).
+ Consulting Room and ANC had the least dissatisfaction (4.76% each).
+
+#Availability of Seating:
+ A significant majority (87.61%) of respondents reported seating availability, while 12.39% experienced a lack of seating.
+
+#Satisfaction Trends Over Time:
+ Overall satisfaction improved slightly from 80.3% in 2021 to 81.8% in 2024, showing a positive trend.
+ Dissatisfaction dropped marginally from 19.7% in 2021 to 18.2% in 2024.
+
+#Insurance Coverage:
+ A vast majority of respondents were insured (92.62%), while a small portion (7.38%) were uninsured.
+
+#Satisfaction with Time Spent:
+Over half of the respondents (55.82%) were "Very Satisfied" with the time spent at the OPD.
+Another 36.55% reported being "Satisfied," leaving only a minority dissatisfied (7.01% Dissatisfied and 0.63% Very Dissatisfied).
 
 
 
