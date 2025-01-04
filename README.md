@@ -15,9 +15,11 @@ A total of 123,000 prescriptions were issued, while 102,000 medicines were dispe
 
 ![Prescription](https://github.com/user-attachments/assets/46f97034-ea91-418c-b015-bc6cfcfb039a)
 
-July 2024 recorded the highest monthly fulfillment, with 11,700 medicines dispensed, while March 2024 saw the lowest at 7,400 medicines dispensed. Seasonal variations or supply chain challenges may be responsible for the observed trends. Addressing these issues can ensure consistent availability of medicines.
+Cummulativle, July 2024 recorded the highest monthly fulfillment, with 9,700 medicines dispensed out of 11,700 prescriptions, while March 2024 saw the lowest at 6,713 medicines dispensed out of 8334. Seasonal variations or supply chain challenges may be responsible for the observed trends. Addressing these issues can ensure consistent availability of medicines.
 
-Significant fluctuations in daily medicine dispensing were observed, with the highest at 730 and the lowest at 118. These inconsistencies may affect patient trust and adherence to treatment. Stabilizing daily operations is crucial for maintaining quality care.
+Significant fluctuations were observed in daily medicine dispensing, with the highest recorded at 545 and the lowest at 48. These inconsistencies pose a risk to patient trust and adherence to treatment regimens. Stabilizing daily operations is essential to ensure consistent, high-quality care.
+
+Notably, during January 2024, a considerable gap was identified between prescription issuance and fulfillment, with daily fullfilment gap of upto about 50% . This highlights an urgent need to address systemic inefficiencies to enhance service delivery and patient satisfaction. 
 
 ![Screenshot 2025-01-04 165537](https://github.com/user-attachments/assets/20157e16-da6b-4cf1-a64d-623d282c7c20)
 
