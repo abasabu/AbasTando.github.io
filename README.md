@@ -1,5 +1,5 @@
-##OPD Pharmacy Dashboard
 
+# OPD Pharmacy Dashboard
 The OPD Pharmacy Dashboard provides a comprehensive analysis of patient attendance, demographic distribution, and prescription fulfillment trends for 2024. This report highlights key insights, identifies highs and lows, and discusses their implications for quality care.
 
 ![Attendance and gender Distribution](https://github.com/user-attachments/assets/fb7c802b-7a5d-4ef6-8270-9cd32191d8b7)
@@ -36,7 +36,7 @@ The OPD Pharmacy Dashboard reveals valuable insights into patient demographics, 
 
 
 
-#Surgery Dashboard
+## Surgey Dashboard
 
 ##Problem statement
 This dashboard will enhance operating theatre utilization and empower surgeons with actionable insights. This solution will provide real-time data on revenue generation, procedural trends, and individual performance metrics, enabling data-driven decision-making to optimize operations and improve overall efficiency.
