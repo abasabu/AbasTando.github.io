@@ -36,7 +36,7 @@ The OPD Pharmacy Dashboard reveals valuable insights into patient demographics, 
 
 
 
-## Surgey Dashboard
+## Surgery Dashboard
 
 ##Problem statement
 This dashboard will enhance operating theatre utilization and empower surgeons with actionable insights. This solution will provide real-time data on revenue generation, procedural trends, and individual performance metrics, enabling data-driven decision-making to optimize operations and improve overall efficiency.
