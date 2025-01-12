@@ -26,7 +26,7 @@ Notably, during January 2024, a considerable gap was identified between prescrip
 
 To enhance quality care, optimizing stock management is essential to address gaps in prescription fulfillment by improving inventory control and ensuring timely restocking of essential medicines. Seasonal trends should be analyzed to address the causes behind monthly fluctuations in medicine dispensing and mitigate future dips. Services catering to the high number of female patients, including reproductive health and chronic disease management, should be strengthened. Resources must be allocated adequately for children and seniors, addressing their specific health needs. Strategies should be implemented to reduce daily dispensing inconsistencies and ensure reliable service delivery. Prescription fulfillment rates must be continuously tracked, aiming for a target closer to 100% to enhance patient satisfaction and health outcomes.
 
-![Pharmacy Dashboard](https://github.com/user-attachments/assets/8bece1e8-b7e6-413a-9b08-65268aa1a7cf)
+![Pharmacy Dashboard](https://github.com/user-attachments/assets/eb0f4924-e03e-49ff-a639-cc6fdd39d2ea)
 
 The OPD Pharmacy Dashboard reveals valuable insights into patient demographics, prescription trends, and service delivery performance. By addressing identified gaps and optimizing resource allocation, the facility can significantly enhance the quality of care, ensuring better health outcomes and improved patient satisfaction.
 
