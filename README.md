@@ -2,32 +2,25 @@
 # OPD Pharmacy Dashboard
 The OPD Pharmacy Dashboard provides a comprehensive analysis of patient attendance, demographic distribution, and prescription fulfillment trends for 2024. This report highlights key insights, identifies highs and lows, and discusses their implications for quality care.
 
-![Attendance and gender Distribution](https://github.com/user-attachments/assets/fb7c802b-7a5d-4ef6-8270-9cd32191d8b7)
+![Attendance and gender Distribution](https://github.com/user-attachments/assets/23cccd2f-1ea6-484b-bd57-ac8592ced1b9)
 
-The total patient attendance recorded was 63,000. This indicates a high level of patient engagement with the facility, reflecting accessibility and trust in the health service. While positive, high attendance could strain resources such as staff, medications, and time. Proper resource allocation is essential to maintain service quality. 
-The average age of patients was 34.9 years, with a maximum age of 109 years. The diverse age demographic underscores the need for tailored services and medications to cater to different life stages.
+Over the year, a total attendance of 62,512 patients was recorded, with the majority being female, who account for 69.3% of the patient population. This notable gender disparity highlights a greater demand for gender-sensitive healthcare services, particularly in areas like maternal, child health, and reproductive care.
 
-A significant gender disparity is evident, with 57,000 females compared to 25,000 males. The higher number of female patients suggests a greater utilization of services, potentially linked to reproductive health or chronic conditions. This requires gender-sensitive care and resource planning to address specific female health needs.
+The average patient age is 36.1 years, with a wide range spanning from infants to a maximum age of 109 years. Adults and young adults together form the majority of the patient population, emphasizing the need for services that address chronic conditions, lifestyle-related diseases, and reproductive health
 
-Young adults, numbering 25,000, form the largest patient demographic, followed by adults at 22,000, with smaller contributions from seniors, children, and teenagers at 14,000, 13,000, and 7,000 respectively. The predominance of young adults and adults highlights the need to focus on chronic disease management, preventive health education, and maternal care. Pediatric and geriatric health should remain a priority for comprehensive service delivery.
+A total of 122,653 medicines were prescribed during the year, out of which 101,618 were dispensed, resulting in a prescription fulfillment rate of 82.8%. While this rate reflects commendable performance, the 17.2% unmet prescriptions signal potential challenges that need attention, such as inventory management and supply chain efficiency. The age distribution also reveals that adults lead in the number of visits, followed by young adults, seniors, children, and teenagers, suggesting an opportunity to align resources and services with the unique needs of each age group.
 
-A total of 123,000 prescriptions were issued, while 102,000 medicines were dispensed, resulting in a fulfillment rate of 82.8%. A gap of 17.2% indicates that not all prescribed medicines were dispensed. This gap could be due to supply chain issues, affordability challenges, or operational inefficiencies. Unfulfilled prescriptions can undermine treatment adherence and patient outcomes.
+![Prescription](https://github.com/user-attachments/assets/1bef7114-4831-4ec2-9b37-1f8cb38ef739)
+The monthly trends in prescription fulfillment show distinct peaks in March, May, and July, with dips in January and September. This fluctuation may indicate seasonal diseases or operational inefficiencies during high-demand periods. The daily trends, characterized by consistent variability in prescription fulfillment, further underline the need for a robust system to ensure steady and reliable service delivery.
 
-![Prescription](https://github.com/user-attachments/assets/46f97034-ea91-418c-b015-bc6cfcfb039a)
-
-Cummulativle, July 2024 recorded the highest monthly fulfillment, with 9,700 medicines dispensed out of 11,700 prescriptions, while March 2024 saw the lowest at 6,713 medicines dispensed out of 8334. Seasonal variations or supply chain challenges may be responsible for the observed trends. Addressing these issues can ensure consistent availability of medicines.
-
-Significant fluctuations were observed in daily medicine dispensing, with the highest recorded at 545 and the lowest at 48. These inconsistencies pose a risk to patient trust and adherence to treatment regimens. Stabilizing daily operations is essential to ensure consistent, high-quality care.
-
-Notably, during January 2024, a considerable gap was identified between prescription issuance and fulfillment, with daily fullfilment gap of upto about 50% . This highlights an urgent need to address systemic inefficiencies to enhance service delivery and patient satisfaction. 
+The implication of these findings is clear. While the prescription fulfillment rate is encouraging, the unmet prescriptions represent a gap that could lead to patient dissatisfaction, reduced adherence to treatment regimens, and poorer health outcomes. The heavy reliance on services by female patients underscores the need to tailor healthcare delivery to address their specific needs. Similarly, focusing on the adult and young adult populations will enhance the relevance and impact of services offered. Seasonal fluctuations in demand also present an opportunity for management to refine operations, ensuring adequate resources are available during peak periods and addressing potential causes for lower engagement during dips.
 
 ![Screenshot 2025-01-04 165537](https://github.com/user-attachments/assets/20157e16-da6b-4cf1-a64d-623d282c7c20)
 
 
 To enhance quality care, optimizing stock management is essential to address gaps in prescription fulfillment by improving inventory control and ensuring timely restocking of essential medicines. Seasonal trends should be analyzed to address the causes behind monthly fluctuations in medicine dispensing and mitigate future dips. Services catering to the high number of female patients, including reproductive health and chronic disease management, should be strengthened. Resources must be allocated adequately for children and seniors, addressing their specific health needs. Strategies should be implemented to reduce daily dispensing inconsistencies and ensure reliable service delivery. Prescription fulfillment rates must be continuously tracked, aiming for a target closer to 100% to enhance patient satisfaction and health outcomes.
 
-
-
+![Pharmacy Dashboard](https://github.com/user-attachments/assets/eb0f4924-e03e-49ff-a639-cc6fdd39d2ea)
 The OPD Pharmacy Dashboard reveals valuable insights into patient demographics, prescription trends, and service delivery performance. By addressing identified gaps and optimizing resource allocation, the facility can significantly enhance the quality of care, ensuring better health outcomes and improved patient satisfaction.
 
 
